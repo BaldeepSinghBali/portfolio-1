@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-const links = ['About', 'Skills', 'Projects', 'Contact'];
+const links = ['About', 'Skills', 'Projects', 'Certificates', 'Contact'];
 
 export default function Navbar() {
   return (

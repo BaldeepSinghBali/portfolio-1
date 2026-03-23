@@ -5,6 +5,7 @@ import Education from './Education';
 import ProjectCards from './ProjectCards';
 import Contact from './Contact';
 import Award from './Award';
+import Certificates from './Certificates';
 
 export default function Overlay() {
   return (
@@ -14,6 +15,7 @@ export default function Overlay() {
       <TechStack />
       <ProjectCards />
       <Award />
+      <Certificates />
       <Education />
       <Contact />
     </div>
