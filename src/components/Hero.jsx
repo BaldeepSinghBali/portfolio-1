@@ -162,7 +162,7 @@ export default function Hero() {
           className="hero-serif"
           style={{ color: 'var(--accent)', lineHeight: 1.05, fontSize: 'clamp(3rem, 5vw, 4.8rem)', marginBottom: 28 }}
         >
-          Singh Bali.
+          Singh Bali
         </motion.h1>
 
         <motion.p
