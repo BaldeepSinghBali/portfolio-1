@@ -16,7 +16,7 @@ export default function ThreeCanvas() {
         
         <Environment preset="night" />
         
-        <ScrollControls pages={12} damping={0.25}>
+        <ScrollControls pages={8} damping={0.25}>
           <Sparkles count={150} scale={25} size={3} speed={0.2} opacity={0.4} color="#e23636" />
           <Sparkles count={80}  scale={20} size={5} speed={0.1} opacity={0.3} color="#f78f3f" />
           <Sparkles count={50}  scale={15} size={2} speed={0.3} opacity={0.5} color="#ffffff" />

@@ -26,8 +26,8 @@ export default function Navbar() {
         href="/cv.pdf"
         target="_blank"
         rel="noreferrer"
-        className="px-6 py-2.5 text-sm font-bold rounded-xl transition-all duration-300 hover:scale-105"
-        style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: '0.85rem', letterSpacing: '0.08em', color: 'var(--marvel-gold)', border: '1px solid rgba(247, 143, 63, 0.4)', background: 'rgba(247, 143, 63, 0.1)' }}
+        className="px-8 py-3.5 text-sm font-bold rounded-xl transition-all duration-300 hover:scale-105"
+        style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: '0.9rem', letterSpacing: '0.1em', color: 'var(--marvel-gold)', border: '1px solid rgba(247, 143, 63, 0.4)', background: 'rgba(247, 143, 63, 0.1)' }}
       >
         Resume ↗
       </a>

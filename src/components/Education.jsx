@@ -38,9 +38,9 @@ const timeline = [
 
 export default function Education() {
   return (
-    <section className="w-full min-h-screen py-72 pointer-events-auto relative flex flex-col items-center overflow-hidden">
+    <section className="w-full min-h-screen py-24 pointer-events-auto relative flex flex-col items-center overflow-hidden">
       
-      <div className="text-center mb-16 relative z-10 space-y-4 mt-8">
+      <div className="text-center mb-20 relative z-10 space-y-4 mt-8">
         <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '3.5rem', fontWeight: 800, color: 'var(--text-1)' }}>
           Education <span style={{ color: 'var(--accent)' }}>Timeline</span>
         </h2>
@@ -64,7 +64,7 @@ export default function Education() {
         />
 
         {timeline.map((item, i) => (
-          <div key={i} className={`flex w-full mb-20 relative md:justify-between items-center ${i % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
+          <div key={i} className={`flex w-full mb-36 relative md:justify-between items-center ${i % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
             
             <div className="absolute left-[28px] md:left-1/2 top-8 md:-translate-x-1/2 w-4 h-4 rounded-full border-2 z-20" 
                  style={{ 
@@ -84,7 +84,7 @@ export default function Education() {
               className="w-full md:w-5/12 pl-20 md:pl-0"
             >
               <div 
-                className="p-10 rounded-[32px] text-left relative overflow-hidden group hover:-translate-y-2 transition-transform duration-300"
+                className="py-12 pr-12 pl-16 rounded-[32px] text-left relative overflow-hidden group hover:-translate-y-2 transition-transform duration-300"
                 style={{
                   background: '#16110d',
                   border: `1px solid rgba(255,255,255,0.08)`,
@@ -94,14 +94,14 @@ export default function Education() {
               >
                 <div className="absolute top-0 left-0 right-0 h-1.5 opacity-60" style={{ background: item.color }} />
                 
-                <h3 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '1.5rem', fontWeight: 700, color: '#ffffff', leading: 1.2 }}>
+                <h3 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '1.5rem', fontWeight: 700, color: '#ffffff', lineHeight: 1.3 }}>
                   <InteractiveEmoji className="mr-3">{item.title.split(' ')[0]}</InteractiveEmoji>
                   {item.title.split(' ').slice(1).join(' ')}
                 </h3>
-                <p style={{ color: item.color, fontSize: '0.95rem', fontWeight: 500, marginTop: 8 }}>{item.subtitle}</p>
-                <p style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: '0.85rem', color: '#8c7f76', marginTop: 12, marginBottom: 16, letterSpacing: '0.05em' }}>{item.date}</p>
+                <p style={{ color: item.color, fontSize: '0.95rem', fontWeight: 500, marginTop: 14 }}>{item.subtitle}</p>
+                <p style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: '0.85rem', color: '#8c7f76', marginTop: 16, marginBottom: 20, letterSpacing: '0.05em' }}>{item.date}</p>
                 
-                <p style={{ color: '#bdb2aa', fontSize: '1rem', lineHeight: '1.8', marginBottom: 24 }}>{item.desc}</p>
+                <p style={{ color: '#bdb2aa', fontSize: '1rem', lineHeight: '2.0', marginBottom: 28 }}>{item.desc}</p>
                 
                 <div className="flex flex-wrap gap-2">
                   {item.tags.map(tag => (
